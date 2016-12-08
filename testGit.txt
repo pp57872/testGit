@@ -1,2 +1,1 @@
-hellow Git world~~~~
-Who are You?
+hellow Git world

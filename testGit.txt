@@ -1,3 +1,19 @@
 hellow Git world~~~~
 Who are You?
-KIM SYSTEM.
+
+발급 요청 -> 
+issueMobileCard () 영카드, 틴카드 구분->
+CICSocket3300 (멤버쉽 발급 3300 전문 심사(EXAMIN)및 신규(NEW ISSUE)) ->
+영카드/틴카드 일 경우 나이제한 확인후 return ->
+카드번호는 있고 처리결과 코드가 213이 아닌 경우 실패처리 213인 경우 기존발급자로 재발급 ->
+searchMobileMember (모바일 회원 조회) ->
+CICSocket2910(모바일회원가입) ->
+신규가입구분코드 를 1 (멤버스신규회원 가입)로 설정
+심사후 카드번호가 없을 경우 CICSocket3300 (신규(NEW ISSUE)) ->
+searchMobileMember (모바일 회원 조회) 
+CICSocket2910(모바일회원가입) ->
+신규가입구분코드 를 1 (멤버스신규회원 가입)로 설정
+
+
+조회 요청 -> 
+getTradeInfo ->
